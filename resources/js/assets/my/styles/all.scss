@@ -1,0 +1,159 @@
+@import url(../../bootstrap/css/bootstrap.min.css);
+@import url(../../font/Fontawesome/css/all.min.css);
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+$color:#f60;
+$color1:#fff;
+$color2:#ddd;
+$color3:#c2c5c8;
+$color4:#0080ff;
+$color5:green;
+$color6:#eee;
+$color7:#212529;
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+#mainHeader {
+    #logo {
+        color: $color;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        span {
+            font-size: 12px;
+        }
+    }
+    .nav-link {
+        color: $color2;
+    }
+}
+
+#mainContent {
+    #subSidebar {
+        min-height: 1000px;
+        position: relative;
+        background-color: $color6;
+        overflow: auto;
+        flex-shrink: 0;
+        .sidebarChild {
+            position: fixed;
+        }
+    }
+    
+    #subMenu {
+        position: relative;
+        background-color: $color6;
+        overflow: auto;
+        flex-shrink: 0;
+        .menuChild {
+            position: fixed;
+            a {
+                text-transform: capitalize;
+            }
+        }
+    }
+    .clickCopy {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        position: absolute;
+        top: 3px;
+        color: $color4;
+        right: 3px;
+    }
+    .customCode {
+        margin: 5px 0;
+        border: 1px solid $color;
+        width: 100%;
+        display: block;
+        background-color: $color7;
+        color: $color1;
+        border-left: 3px solid $color4;
+        max-width: 100%;
+        padding: 5px;
+        border-radius: 6px 0 6px 6px;
+        position: relative;
+    }
+    .customText {
+        margin: 5px 0;
+        border: 1px solid $color;
+        width: 100%;
+        display: block;
+        background-color: $color6;
+        border-left: 3px solid $color4;
+        max-width: 100%;
+        padding: 5px;
+        border-radius: 6px 0 6px 6px;
+    }
+    .customLink {
+        margin: 5px 0;
+        border: 1px solid $color;
+        width: 100%;
+        border-left: 3px solid $color4;
+        display: block;
+        background-color: $color1;
+        max-width: 100%;
+        padding: 5px;
+        border-radius: 6px 0 6px 6px;
+        position: relative;
+        &.get{
+            &::before {
+                content: 'GET: ';
+                border-left: 3px solid $color5;
+                padding: 2px;
+                margin-right: 3px;
+                background-color: $color5;
+                border-radius:  6px 0 6px 6px;
+                font-weight: 600;
+                color: $color1;
+            }
+        }
+        
+        &.put{
+            &::before {
+                content: 'PUT: ';
+                border-left: 3px solid $color5;
+                padding: 2px;
+                margin-right: 3px;
+                background-color: $color5;
+                border-radius:  6px 0 6px 6px;
+                font-weight: 600;
+                color: $color1;
+            }
+        }
+        
+        &.post{
+            &::before {
+                content: 'POST: ';
+                border-left: 3px solid $color5;
+                padding: 2px;
+                margin-right: 3px;
+                background-color: $color5;
+                border-radius:  6px 0 6px 6px;
+                font-weight: 600;
+                color: $color1;
+            }
+        }
+        
+        &.up{
+            &::before {
+                content: 'UP: ';
+                border-left: 3px solid $color5;
+                padding: 2px;
+                margin-right: 3px;
+                background-color: $color5;
+                border-radius:  6px 0 6px 6px;
+                font-weight: 600;
+                color: $color1;
+            }
+        }
+    }
+}
